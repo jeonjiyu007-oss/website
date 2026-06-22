@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outfit Ideas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background:#f8f9fb;
+    color:#222;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#7c3aed;
+}
+
+/* Hero */
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 8%;
+    background:linear-gradient(135deg,#f5f3ff,#ffffff);
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero-content span{
+    color:#7c3aed;
+}
+
+.hero-content p{
+    max-width:650px;
+    margin:auto;
+    color:#666;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 32px;
+    background:#7c3aed;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6d28d9;
+    transform:translateY(-2px);
+}
+
+/* Section */
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* Inspiration */
+.inspiration{
+    background:white;
+    border-radius:24px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.inspiration p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Outfit Ideas</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Styles</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Your <span>Perfect Look</span></h1>
+        <p>
+            Explore stylish outfit inspirations for every season,
+            occasion, and mood. Build confidence through fashion.
+        </p>
+        <a href="#" class="btn">Explore Outfits</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Trending Outfit Ideas</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800" alt="">
+            <div class="card-content">
+                <h3>Casual Streetwear</h3>
+                <p>
+                    Relaxed fits, sneakers, and modern layers for
+                    everyday comfort and style.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800" alt="">
+            <div class="card-content">
+                <h3>Elegant Evening</h3>
+                <p>
+                    Sophisticated outfits perfect for events,
+                    dinners, and special occasions.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800" alt="">
+            <div class="card-content">
+                <h3>Minimal Chic</h3>
+                <p>
+                    Neutral tones, clean silhouettes, and timeless
+                    wardrobe essentials.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="inspiration">
+        <h2 class="section-title">Daily Style Inspiration</h2>
+        <p>
+            Fashion is more than clothing—it's self-expression.
+            Experiment with colors, textures, and accessories to
+            create looks that reflect your personality. Whether
+            you're dressing for work, a casual outing, or a special
+            event, confidence is always your best accessory.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Outfit Ideas • Designed with HTML & CSS
+</footer>
+
+</body>
+</html>
